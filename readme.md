@@ -296,3 +296,65 @@ class AdvCalc extends Calc{
 
 **protected** : by making the method or variable protected, you can use that method or variable only in the same package. But you can access the protected variable outside the package but in the sub class.
 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Polymorphism :
+consist of two words **poly** means **many** and **morphism** means **form/behaviour**
+
+**Types :**
+* Run-time polymorphism / late binding
+* Compile-time polymorphism / early binding
+
+
+# final keyword :
+
+**final variable** : a variable whose value you don't want to change, in that case you simply use final keyword along the variable. It's same as making constant varibles in other languages.
+
+**final method** : by using a final keyword with a method you prevents others from overriding the methods.
+
+**final class** : by using a final keyword with a method you prevents others from inheriting the class.
+
+
+# Wrapper Class 
+Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+
+Primitive Data Type	   Wrapper Class
+----------------------------------------------------------------
+      byte	               Byte
+      short	               Short
+      int	               Integer
+      long	               Long
+      float	               Float
+      double	            Double
+      boolean	            Boolean
+      char	               Character
+
+# Boxing : 
+ Boxing in Java is the process of converting a primitive data type into its corresponding wrapper class object.
+ ````bash
+Integer num1 = new Integer(num);
+````
+
+**AutoBoxing** : when boxing take place implicitly.
+````bash
+Integer num2 = num;
+````
+
+**unBoxing** : getting a value of object type to primitive type.
+````bash
+int num3 = num2.intValue();
+````
+
+**AutoUnboxing** : when unboxing take place implicitly.    
+````bash
+int num4 = num2;
+````
+
+# Abstract :
+* abstract keyword is used to define the method and that abstract method can be define in a abstract  class.
+* Abstract class, it's not compulsary to use a abstract method, you can either create a abstract or non abstract or both methods.
+* if you create more than one abstract method, then all those method should be inherited by the other class.
+
+
+**You can't create a object of an abstract class**
