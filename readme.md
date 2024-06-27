@@ -358,3 +358,25 @@ int num4 = num2;
 
 
 **You can't create a object of an abstract class**
+
+# inner class :
+ A class inside a class.
+
+````bash
+class A {
+ public void show() {
+  //code
+ }
+
+  class B {
+   //code
+  }
+} 
+````
+
+## Anonymous Class
+````bash 
+className obj = new className() {
+ // code
+};
+````
