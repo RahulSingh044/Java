@@ -26,6 +26,13 @@ class A {
     }
 }
 
+abstract class X{
+
+    public void research(){ 
+        System.out.println("in abstract research");
+    };
+}
+
 public class InnerClass {
     public static void main(String[] args) {
 
@@ -49,6 +56,15 @@ public class InnerClass {
 
         obj1.config();
         obj2.display();
+
+    // instead of creating a new class that will inherit the abstract class, we simply create a anonymous class, this shows the implementation of abstract and anonymous inner class together  
+        X obj3 = new X({
+            public void research(){
+                System.out.println("in anonymous research");
+            }
+        });
+
+        obj3.research();
 
     }
 }

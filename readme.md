@@ -380,3 +380,36 @@ className obj = new className() {
  // code
 };
 ````
+
+# Interface : 
+An Interface in Java programming language is defined as an abstract type used to specify the behavior of a class. An interface in Java is a blueprint of a behavior
+
+* It is similar to class in which every method of an interface is by default public abstract.
+
+* If a class that implements from an interface must have to use all the interface methods otherwise it will become abstract class instead of concrete class.
+
+**Note** :  All the variables inside the interface is by default **static** or **final**
+
+* Interface don't have their memory in the heap, that's wht they have final and static variable by default.
+
+* A class can implement multiple interfaces.
+
+* inheritance is valid in the interface i.e.
+````bash
+interface X extends Y {
+  //code
+}
+````
+
+# enums : 
+ In java, enum is also treated as the class and each member of the enum is treated as object. By default enum extends the enum class.
+
+
+# Annotations : 
+ A suppliment to the compiler to interact with the compiler.
+
+ - @override : that shows that the methods override the methods of super class.
+
+ - @Deprecated : it means you can use it but don't use it.
+
+ # Function Interface: 
