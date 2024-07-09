@@ -1,6 +1,6 @@
 
 @FunctionalInterface
-// You can use only one abstract method IN A Functional Interface
+// You can use only one abstract method in a Functional Interface
 // you can use lamda function with FunctionalInterface only...
 interface A {
     // void show();

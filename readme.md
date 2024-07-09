@@ -412,4 +412,57 @@ interface X extends Y {
 
  - @Deprecated : it means you can use it but don't use it.
 
- # Function Interface: 
+ ## Types of Interface:
+
+ - Normal interface : A interface with two or more interfaces.
+
+ ````bash
+ interface abc {
+   //methods
+ }
+ ````
+
+ - functional interface/ SAM : When you have a single methods in an interface it is called **Single Abstract Method**
+ ````bash
+ interface ab {
+  void show();
+ }
+````
+
+ - Marker interface : A interface that have no methods in it. i.e. a blank interface.
+ ````bash
+ interface ab {
+
+ }
+````
+
+# Types of Errors :
+- Compile time error
+- Run time error
+- logical error 
+
+# Exceptions : 
+They are also known as **Runtime Errors**
+
+ ### Handling the exception :
+  We can handle the exceptions by using **try & catch** method. It is implemented when you encountered a **critical statement**, it will let your complier execute the whole code even though it ecnountered some run time errors.
+
+**Note** : the catch block will only execute when their is exception.
+
+**Note** : **Exception** is parent class which it self extends from **throwables** and all the other exceptions class are extend from this class. It is generally used at the bottom of the other exceptions class, when you don't know what type of error it throw.
+
+# throw keyword:
+ it is mainly used to throw custom exception. i.e. when you want to handle a exception with a catch method but during execution doesn't show that specific execution so you manually create that exception with the help of the throw..
+
+# throws keyword:
+ It is used when you have a critical statement in the method and you don't want to handle the exception there, So you just simplt throw the exception , so whenever you call the method you had to handle the exception..It is also helpful to debug the aplication...
+ ````bash
+  public void show() throws Exception {
+   //code
+   }
+  ````
+
+# Taking INput from the user :
+  
+ 
+   
